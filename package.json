@@ -4,7 +4,7 @@
   "description": "A react native progress button for Android and IOS",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "eslint *.js"
   },
   "repository": {
     "type": "git",
@@ -20,12 +20,17 @@
     "url": "https://github.com/xinghui0000/react-native-progress-button/issues"
   },
   "homepage": "https://github.com/xinghui0000/react-native-progress-button#readme",
+  "peerDependencies": {
+    "react": "*",
+    "react-native": "*"
+  },
   "devDependencies": {
-    "babel-jest": "^20.0.3",
-    "babel-preset-react-native": "^2.1.0",
-    "jest": "^20.0.4",
-    "react": "^15.6.1",
-    "react-native": "^0.46.4",
-    "react-test-renderer": "^15.6.1"
-  }
+    "babel-eslint": "^7.1.1",
+    "eslint": "^3.16.0",
+    "eslint-config-airbnb": "^14.1.0",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "^4.0.0",
+    "eslint-plugin-react": "^6.10.0"
+  },
+  "dependencies": {}
 }

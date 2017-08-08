@@ -14,7 +14,7 @@ const styles = StyleSheet.create({
 const SpinProgressButton = (props) => {
     return (
         <View style={styles.container}>
-            <ActivityIndicator size= 'large' />
+            <ActivityIndicator size= {'large'} clolr={'red'}/>
         </View>
     );
 };
