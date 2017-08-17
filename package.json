@@ -1,6 +1,6 @@
 {
   "name": "react-native-progress-button",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "A react native progress button for Android and IOS",
   "main": "index.js",
   "scripts": {

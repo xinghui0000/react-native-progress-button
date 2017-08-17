@@ -1,5 +1,5 @@
-import SpinProgressButton from './src/SpinProgressButton';
+import ProgressButton from './src/ProgressButton';
 
 module.exports =  {
-    SpinProgressButton
+    ProgressButton
 }
