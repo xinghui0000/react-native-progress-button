@@ -151,7 +151,7 @@ class ProgressButton extends React.Component {
             position: 'absolute',
             alignSelf:'center',
             alignItems:"center",
-            justifyContent: 'space-around',
+            justifyContent: 'center',
             flexDirection:'row',
         };
 
@@ -171,7 +171,8 @@ class ProgressButton extends React.Component {
                     ...progressViewWrapperStyle,
                     width: this.state.progressValue,
                     backgroundColor: progressColor,
-                    borderRadius:ProgressButton.isAndroid? innerRadius : 0
+                    borderRadius:ProgressButton.isAndroid? innerRadius : 0,
+                    textAlign:'center'
 
                 };
                 return (

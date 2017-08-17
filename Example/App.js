@@ -1,7 +1,7 @@
 import React from 'react';
 import {View, StyleSheet, Text, processColor, Image} from 'react-native';
-// import ProgressButton from './src/ProgressButton';
-import {ProgressButton} from 'react-native-progress-button';
+import ProgressButton from './src/ProgressButton';
+// import {ProgressButton} from 'react-native-progress-button';
 const styles = StyleSheet.create({
     container: {
         flex:1,
@@ -78,8 +78,8 @@ class App extends React.Component{
                 return Object.assign({}, prevState, {
                     continueProgressButton: {
                         ...prevState.continueProgressButton,
-                        progress: Math.min(progress + 5, 100),
-                        text: 'Press to add progress:' + (progress + 5) + '%'
+                        progress: Math.min(progress + 20, 100),
+                        text: 'Press to add progress:' + Math.min(progress + 20, 100) + '%'
                     }
                 })
             })
@@ -102,7 +102,7 @@ class App extends React.Component{
             this.setState({
                 timerButton: {
                     timingConfig:{
-                        duration:10000,
+                        duration:5000,
                     },
                     buttonState:'progress',
                     progress:100,
@@ -152,7 +152,7 @@ class App extends React.Component{
                     customStyleButton:{
                         ...prevState.customStyleButton,
                         timingConfig:{
-                            duration:10000,
+                            duration:5000,
                         },
                         buttonState:'progress',
                         progress:100,
