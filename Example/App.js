@@ -1,7 +1,7 @@
 import React from 'react';
 import {View, StyleSheet, Text, processColor, Image} from 'react-native';
-import ProgressButton from './src/ProgressButton';
-// import {ProgressButton} from 'react-native-progress-button';
+// import ProgressButton from './src/ProgressButton';
+import {ProgressButton} from 'react-native-progress-button';
 const styles = StyleSheet.create({
     container: {
         flex:1,
