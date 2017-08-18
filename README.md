@@ -1,4 +1,6 @@
 # react-native-progress-button
+[![npm version](https://badge.fury.io/js/react-native-progress-button.svg)](https://badge.fury.io/js/react-native-progress-button)
+
 A react native button component that can show progress.
 
 ![ScreenShot-ios](https://github.com/xinghui0000/react-native-progress-button/blob/master/screenshots/react-native-progress-demo-ios.gif?raw=true)
