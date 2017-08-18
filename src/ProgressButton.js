@@ -55,7 +55,7 @@ class ProgressButton extends React.Component {
         Animated.timing(this.state.progressValue, {
             toValue: this._calculateProgressToWidth(toProgress, maxProgress),
             duration: 100,
-            ...extraConfig
+            ...extraConfig,
         }).start(({finished}) => {
             this.state.animating = false;
             if (this.props.onProgressAnimatedFinished && finished) {
@@ -72,7 +72,7 @@ class ProgressButton extends React.Component {
             this.state.paused = true;
             const {onProgressAnimatedFinished, maxProgress} = this.props;
             if (onProgressAnimatedFinished) {
-                onProgressAnimatedFinished(this._calculateWidthToProgress(value, maxProgress))
+                onProgressAnimatedFinished(this._calculateWidthToProgress(value, maxProgress));
             }
         });
     }
@@ -186,7 +186,7 @@ class ProgressButton extends React.Component {
             if (buttonState === 'indeterminate') {
                 return (
                     activityIndicator
-                )
+                );
             }
         };
         const _renderTextAndIndeterminateIndicator = (buttonState, text) => {

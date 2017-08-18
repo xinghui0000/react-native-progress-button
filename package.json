@@ -4,7 +4,8 @@
   "description": "A react native progress button for Android and IOS",
   "main": "index.js",
   "scripts": {
-    "test": "eslint *.js"
+    "test": "./node_modules/.bin/eslint *.js src/",
+    "travis": "./node_modules/.bin/jshint *.js src/"
   },
   "repository": {
     "type": "git",
@@ -26,7 +27,8 @@
     "eslint-config-airbnb": "^14.1.0",
     "eslint-plugin-import": "^2.2.0",
     "eslint-plugin-jsx-a11y": "^4.0.0",
-    "eslint-plugin-react": "^6.10.0"
+    "eslint-plugin-react": "^6.10.0",
+    "jshint": "^2.9.5"
   },
   "peerDependencies": {
     "react-native": ">=0.40.0",
