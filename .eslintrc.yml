@@ -12,8 +12,8 @@ plugins:
   - react
 rules:
   indent:
-    - warn
-    - tab
+    - error
+    - 4
   linebreak-style:
     - error
     - unix
@@ -23,3 +23,5 @@ rules:
   semi:
     - error
     - always
+  react/jsx-uses-vars:
+    - error

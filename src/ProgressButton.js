@@ -150,7 +150,7 @@ class ProgressButton extends React.Component {
             height: height - borderWidth,
             position: 'absolute',
             alignSelf:'center',
-            alignItems:"center",
+            alignItems: 'center',
             justifyContent: 'center',
             flexDirection:'row',
         };
