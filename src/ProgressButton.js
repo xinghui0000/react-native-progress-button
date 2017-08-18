@@ -281,7 +281,7 @@ ProgressButton.defaultProps = {
     maxProgress:100,
     activityIndicator: <ActivityIndicator color={processColor('white')}/>,
     activityIndicatorPadding:4,
-    text:'Loading...',
+    text:'OK',
     textStyle: {
         color: 'white'
     }
