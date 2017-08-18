@@ -33,3 +33,10 @@ Props | Description | Default
 `textStyle` | text style of the text. they will be included in `style` attr of text | `textStyle:{color: 'white'}`
 `onPress` | A function to be called as soon as the user press the button.`(event, buttonState, progress) => {}` | 
 `onProgressAnimatedFinished` | A function to be called as soon as the progress animation finished, `(progress) => {}`
+
+
+## Notes
+Because of [`overflow:hidden` is not supported on Android](https://github.com/facebook/react-native/issues/3198), inner progress view displayed diffrently between android and ios when `buttonState` is progress. inner progress view will has border radius , but not in ios, according to outer border radius in android. And when the progress is small, inner progress view will look odd.**So try not to set border radius too large in android.**
+
+## License
+MIT
